@@ -13,7 +13,7 @@ require Exporter;
 
 @EXPORT = qw( odm_dump );
 
-$VERSION = "1.0";
+$VERSION = "1.0.2";
 
 #======================================================================
 
@@ -65,6 +65,7 @@ sub odm_attributes {
   my ${ndx};
   my ${aname};
   my %attrib;
+
 # Retrieve the attributes associated with the device from the ODM
 # Two lines are returned, the attribute names are returned on the 
 # first line, the attribute values returned on the second.
@@ -146,9 +147,11 @@ AIX::ODM -  A Perl module for retrieving ODM information about an AIX (RS/6000/p
 
 This module provides a Perl interface for accessing ODM information about an RS/6000 / pSeries machine running the AIX operating system.  It makes available several functions, which return hashes of values containing device information and their attributes:
 
+The syntax examples shown above as 'C|P' should be read as "C" OR "P", meaning the argument should consist of a single quoted letter "C" or "P", but NOT both.
+
 =head1 VERSION
 
-0.1 (released 2004-06-22)
+1.0.2 (released 2004-09-15)
 
 =head1 BUGS
 
@@ -159,8 +162,9 @@ No bugs are known at this time.
 =head1 AUTHOR
 
   Dana French
-  <mailto:dfrench@mtxia.com>
-  <http://www.mtxia.com>
+  mailto:dfrench@mtxia.com
+  http://www.mtxia.com
+  http://www.ridmail.com
   
 =head1 COPYRIGHT/LICENSE
 
