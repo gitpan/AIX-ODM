@@ -1,10 +1,19 @@
 package AIX::ODM;
 
-require 5.005;
+$^W++;
 use strict;
-use warnings;
+use vars qw(@ISA @EXPORT $VERSION);
+require Exporter;
 
-our $VERSION = "0.1";
+@ISA = qw(Exporter);
+
+# %EXPORT_TAGS = ( 'all' => [ qw(   ) ] );
+
+# @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
+
+@EXPORT = qw( odm_dump );
+
+$VERSION = "1.0";
 
 #======================================================================
 
